@@ -23,7 +23,7 @@ jobs:
       - checkout:
          path: ~/src
 
-      - run: mvn dependency:go-offline 
+      
       - run:
           name: Build
           command: mvn -B -DskipTests clean package
