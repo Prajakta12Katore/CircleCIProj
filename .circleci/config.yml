@@ -21,9 +21,7 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout: # check out source code to working directory
-          path: ~/
-      
-      - run: mvn dependency:go-offline
+          path: ~/src
       
       - run:
           name: Build
